@@ -1,0 +1,984 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAALCHAKRA CTF 1.0 (March 2026) | Past Edition</title>
+    <meta name="description" content="KAALCHAKRA 2026 is a National Level Cyber Security Capture The Flag (CTF) competition organized by National Forensic Sciences University Goa x TH3_RANG3RS. Join India's biggest cybersecurity battlefield. March 28 - April 11, 2026.">
+    
+    <meta property="og:title" content="KAALCHAKRA 2026 | National Level CTF | NFSU Goa">
+    <meta property="og:description" content="KAALCHAKRA 2026 is a National Level Cyber Security Capture The Flag (CTF) competition organized by National Forensic Sciences University Goa x TH3_RANG3RS. Join India's biggest cybersecurity battlefield. March 28 - April 11, 2026.">
+    <meta property="og:image" content="https://kaalchakractf.com/images/CTF_Logo.png">
+    <meta property="og:url" content="https://kaalchakra.com/1.0/index.html">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KAALCHAKRA 2026 - National CTF">
+    <meta name="twitter:description" content="India's premier National Level Cyber Security CTF by NFSU Goa.">
+    <meta name="twitter:image" content="https://kaalchakractf.com/images/CTF_Logo.png">
+<!-- Favicon -->
+    <link rel="icon" href="../images/CTF_Logo.png" type="image/png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://kaalchakra.com/1.0/index.html">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&amp;family=Cormorant+Garamond:wght@300;400;500;600;700&amp;family=Crimson+Text:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-CK77B9JCB0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CK77B9JCB0');
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "KAALCHAKRA CTF 1.0",
+  "startDate": "2026-03-28T14:30:00+05:30",
+  "endDate": "2026-04-11T17:00:00+05:30",
+  "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "url": "https://kaalchakra.com/1.0/index.html",
+  "location": {
+    "@type": "Place",
+    "name": "National Forensic Sciences University, Goa",
+    "address": "Goa, India"
+  },
+  "organizer": {
+    "@type": "Organization",
+    "name": "NFSU Goa x TH3_RANG3RS",
+    "url": "https://kaalchakra.com/"
+  }
+}
+</script>
+
+<style>
+    @keyframes confettiFall {
+        to {
+            transform: translateY(100vh) rotate(349.0058192586758deg);
+            opacity: 0;
+        }
+    }
+</style><style>
+    @keyframes ripple {
+        to {
+            transform: scale(4);
+            opacity: 0;
+        }
+    }
+</style></head>
+<body class="loaded">
+    <!-- Atmospheric Background Effects -->
+    <div class="snow-container" id="snowContainer"><div class="snowflake" style="left: 81.1984%; animation-duration: 17.6963s; opacity: 0.563158; font-size: 15.5486px;">❄</div><div class="snowflake" style="left: 53.02%; animation-duration: 11.6379s; opacity: 0.580241; font-size: 18.6025px;">❄</div><div class="snowflake" style="left: 54.483%; animation-duration: 17.0403s; opacity: 0.41332; font-size: 15.668px;">❄</div><div class="snowflake" style="left: 3.16401%; animation-duration: 13.0485s; opacity: 0.140749; font-size: 18.4941px;">❄</div><div class="snowflake" style="left: 0.967541%; animation-duration: 12.2077s; opacity: 0.251129; font-size: 17.432px;">❄</div><div class="snowflake" style="left: 10.6986%; animation-duration: 18.4481s; opacity: 0.515172; font-size: 18.0552px;">❄</div><div class="snowflake" style="left: 76.4751%; animation-duration: 14.7455s; opacity: 0.153914; font-size: 15.929px;">❄</div><div class="snowflake" style="left: 22.4371%; animation-duration: 18.0943s; opacity: 0.495057; font-size: 12.1398px;">❄</div><div class="snowflake" style="left: 84.6131%; animation-duration: 12.5829s; opacity: 0.473546; font-size: 19.5662px;">❄</div><div class="snowflake" style="left: 48.8761%; animation-duration: 12.2408s; opacity: 0.401787; font-size: 14.9336px;">❄</div><div class="snowflake" style="left: 79.9855%; animation-duration: 13.7443s; opacity: 0.253815; font-size: 11.6124px;">❄</div><div class="snowflake" style="left: 76.9799%; animation-duration: 16.7357s; opacity: 0.10069; font-size: 18.028px;">❄</div><div class="snowflake" style="left: 66.1436%; animation-duration: 16.1927s; opacity: 0.115664; font-size: 15.9804px;">❄</div></div>
+    <div class="fog-overlay"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav scrolled" id="mainNav" style="top: -120px;">
+        <div class="nav-content">
+            <div class="nav-logo">
+                <img src="../images/emblem.png" alt="NFSU Logo" loading="lazy" style="height:80px; width:auto; margin-bottom:0.25rem;">
+            </div>
+            <div class="nav-links">
+                <a href="#about">The Realm</a>
+                <a href="#battle">Battle Structure</a>
+                <a href="#houses">Houses</a>
+                <a href="#prizes">Prizes</a>
+                <a href="#sponsors">Sponsors</a>
+                <a href="#legacy">1.0 Legacy</a>
+		<a href="organizers.html">Organizers</a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-layer" style="transform: translateY(4010px);"></div>
+        <div class="hero-content">
+            <div class="hero-emblem aos-animate" data-aos="fade-down">
+                        <div class="emblem-center">
+                            <img src="../images/CTF_Logo.png" alt="Kaalchakra CTF Logo" fetchpriority="high" style="max-width:350px; height:350px;">
+                        </div>       
+            </div>
+            
+            <h1 class="hero-title aos-animate" data-aos="fade-up" data-aos-delay="200">
+                
+                <span class="hero-title-main">KAALCHAKRA</span>
+            </h1>
+            
+            <p class="hero-subtitle aos-animate" data-aos="fade-up" data-aos-delay="400">
+                National Level Cyber Security CTF
+            </p>
+            
+            <div class="hero-org aos-animate" data-aos="fade-up" data-aos-delay="500">
+                <span class="org-presented">Organised by</span>
+                <span class="org-name">National Forensic Sciences University, GOA</span>
+            </div>
+
+            <div class="hero-tagline aos-animate" data-aos="fade-up" data-aos-delay="600">
+                <div class="tagline-line"></div>
+                <p>Winter Is Coming. Only the Sharpest Minds Survive.</p>
+                <div class="tagline-line"></div>
+            </div>
+
+            <div class="countdown-container aos-animate" data-aos="fade-up" data-aos-delay="700">
+                <div class="countdown-label">The War Begins In</div>
+                <div class="countdown" id="countdown"><div class="countdown-ended">The War Has Begun!</div></div>
+            </div>
+
+            <div class="hero-cta aos-animate" data-aos="fade-up" data-aos-delay="800">
+                <button class="cta-primary" id="registerBtn">
+                <a href="#legacy" class="cta-primary" target="_blank" rel="noopener noreferrer" onclick="gtag('event','register_click');"> Registration Closed </a>
+                <div class="cta-shine"></div>
+                </button>
+                <button class="cta-secondary" onclick="document.getElementById('sponsors').scrollIntoView({behavior: 'smooth'})">
+                    <span>Sponsor the War</span>
+                </button>
+            </div>
+
+            <div class="hero-details aos-animate" data-aos="fade-up" data-aos-delay="900">
+                <div class="detail-item">
+                    <span class="detail-icon">📅</span>
+                    <span class="detail-text"><b>March 28 &amp; April 11, 2026</b></span>
+                </div>
+                <div class="detail-separator">|</div>
+                <div class="detail-item">
+                    <span class="detail-icon">👥</span>
+                    <span class="detail-text"><b>3 Warriors Per Team</b></span>
+                </div>
+                <div class="detail-separator">|</div>
+                <div class="detail-item">
+                    <span class="detail-icon">💰</span>
+                    <span class="detail-text"><b>₹300 Entry Fee</b></span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-scroll">
+            <span></span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header aos-animate" data-aos="fade-up">
+                <h2 class="section-title">The Realm Beckons</h2>
+                <div class="title-ornament">⚔</div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-content aos-animate" data-aos="fade-right">
+                    <h3 class="about-heading">What Is a CTF?</h3>
+                    <p class="about-text">
+                        A <strong>Capture The Flag (CTF)</strong> is not merely a competition—it is a crucible where cyber warriors are forged. 
+                        In this digital battlefield, teams face real-world security challenges, hunting for hidden flags through 
+                        exploitation, cryptanalysis, forensic investigation, and tactical thinking.
+                    </p>
+                    <p class="about-text">
+                        Unlike theoretical exercises, CTFs demand <strong>hands-on combat</strong> with live systems, 
+                        encrypted messages, vulnerable applications, and concealed secrets. Only those who combine technical 
+                        prowess with strategic thinking shall prevail.
+                    </p>
+                </div>
+
+                <div class="about-content aos-animate" data-aos="fade-left" data-aos-delay="200">
+                    <h3 class="about-heading">Why KAALCHAKRA?</h3>
+                    <p class="about-text">
+                        KAALCHAKRA stands as India's premier <strong>national-level cybersecurity championship</strong>, 
+                        hosted by the prestigious National Forensic Sciences University. This is where the nation's finest 
+                        minds converge to prove their worth.
+                    </p>
+                    <p class="about-text">
+                        We seek not just participants, but <strong>elite cyber warriors</strong>—those ready to defend the realm 
+                        against emerging threats. The challenges mirror real adversarial techniques, preparing you for the actual 
+                        cyber warfare landscape.
+                    </p>
+                    <blockquote class="about-quote">
+                        “Chaos isn’t a pit. Chaos is a ladder. Many who try to climb it fail and never get to try again. But some, with skill and persistence, ascend to the top.”
+                        <span class="quote-attribution"> — Petyr Baelish</span>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section class="section rules">
+        <div class="container">
+            <div class="section-header aos-animate" data-aos="fade-up">
+                <h2 class="section-title">Guidelines &amp; Rules</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-content aos-animate" data-aos="fade-right">
+                    <h3 class="about-heading">Eligibility</h3>
+                    <ul class="about-text">
+                        <li>The competition is open to all UG and PG students currently enrolled in recognized Indian institutions. However, For students of the NFSU Goa Campus, participation is open to all academic programs except students belonging to the 2024–2026 batch.</li>
+                        <li>Participants must register as a team of 1 to 3 members.</li>
+                        <li>Each participant must be part of only one team; no substitutions are allowed once the registration has been done.</li>
+                        <li>Valid College ID cards are mandatory for all participating teams.</li>
+<li>Please ensure you meet all eligibility criteria before making the payment. Registration fees are strictly non-refundable, including cases where a team or participant is later found to be ineligible to compete.  </li>
+                    </ul>
+
+                    <h3 class="about-heading">Registration &amp; Support</h3>
+                    <ul class="about-text">
+                        <li>Registration will only be considered complete only after filling the <a href="#legacy"> <b> G-Form. </b> </a> </li>
+                        <li>Registration Fees Rs. 300/- (excluding taxes) must be paid via the link provided in Google Form. Failing which registration will not be recognised.</li>
+                        <li>The official <a href="https://discord.gg/q4Pam5h3Bd" target="_blank"><b>Discord server</b></a> is the primary channel for all announcements and technical support.</li>
+                        <li>Support requests must be raised via the designated ticket system; personal messages (DMs) to organizers are strictly prohibited.</li>
+                        <li>By registering, you consent to the collection and use of personal data for verification and event communication.</li>
+                    </ul>
+
+                    <h3 class="about-heading">Event Structure</h3>
+                    <ul class="about-text">
+                        <li>The Online Qualifier will be conducted on 28 March, 2026, starting at 02:30 PM IST for a duration of 24 hours.</li>
+                        <li>The format is Jeopardy-style CTF with categories including RevEng, Web, Crypto, OSINT, Forensics, AI/ML, Miscellaneous &amp; more.</li>
+                        <li>Based on the leaderboard at end of the event time, the Top 25 teams will be shortlisted for verification.</li>
+                        <li>Verified teams will receive official invite letters for the Offline Finals by April 2, 2026.</li>
+                    </ul>
+                </div>
+
+                <div class="about-content aos-animate" data-aos="fade-left" data-aos-delay="200">
+		    <h3 class="about-heading">Write-up Submission</h3>
+                    <ul class="about-text">
+                        <li>Shortlisted teams must submit detailed solution write-ups within 8 hours of the round ending to prove legitimacy.</li>
+                        <li>Write-ups must clearly explain the approach and methodology used; plagiarized or shared write-ups will lead to immediate disqualification.</li>
+                        <li>Failure to submit write-ups within the deadline will result in disqualification for the final round invitation.</li>
+                    </ul> 
+                    <h3 class="about-heading">Fair Play &amp; Technical Boundaries</h3>
+                    <ul class="about-text">
+                        <li>Sharing flags or solutions between teams is a major violation and will result in disqualification for all parties involved.</li>
+                        <li>Attacks against the scoreboard, registration servers, or event infrastructure (DDoS/DoS) are strictly prohibited.</li>
+                        <li>Automated scanners (e.g., SQLMap, DirBuster) and login brute-forcing are not permitted unless explicitly required by a challenge.</li>
+                        <li>The standard flag format is
+			<span class="flag-format">Kaal{s0m3_t3xt_h3r3}</span> unless specified</li>
+                    </ul>
+
+                    <h3 class="about-heading">Accommodation &amp; Travel</h3>
+                    <ul class="about-text">
+                        <li>All expenses related to travel and stay for the offline finals must be handled by the participants.</li>
+                        <li>The organizers will not provide accommodation facilities or travel reimbursements.</li>
+                    </ul>
+
+                    <h3 class="about-heading">General Rules</h3>
+                    <ul class="about-text">
+                        <li>The decision of the organizers regarding rule violations, scoring, and disputes is final and binding.</li>
+                        <li>Any abusive, problematic, or toxic behaviour toward participants or staff will result in immediate disqualification.</li>
+                        <li>Participation implies full acceptance of these rules and any official updates communicated during the event.</li>
+                        <li>All cash prizes are subject to TDS as per applicable Government of India regulations.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Battle Structure -->
+    <section class="section battle" id="battle">
+        <div class="container">
+            <div class="section-header aos-animate" data-aos="fade-up">
+                <h2 class="section-title">The Path to Glory</h2>
+                <p class="section-subtitle">Two rounds of warfare. Only the worthy shall advance.</p>
+            </div>
+
+            <div class="battle-timeline">
+                <div class="battle-round aos-animate" data-aos="fade-right">
+                    <div class="round-marker">
+                        <div class="marker-outer">
+                            <div class="marker-inner">I</div>
+                        </div>
+                    </div>
+                    <div class="round-content">
+                        <div class="round-badge">Online Preliminary</div>
+                        <h3 class="round-title">The First Siege</h3>
+                        <div class="round-details">
+                            <div class="round-detail">
+                                <span class="detail-label">Date</span>
+                                <span class="detail-value">March 28, 2026</span>
+                            </div>
+                            <div class="round-detail">
+                                <span class="detail-label">Time</span>
+                                <span class="detail-value">02:30 PM (24 Hours)</span>
+                            </div>
+                            <div class="round-detail">
+                                <span class="detail-label">Format</span>
+                                <span class="detail-value">Jeopardy-Style</span>
+                            </div>
+                            <div class="round-detail">
+                                <span class="detail-label">Location</span>
+                                <span class="detail-value">Remote Battlefield</span>
+                            </div>
+                        </div>
+                        <p class="round-description">
+                            Teams across the nation engage in remote warfare, solving real-world challenge scenarios. 
+                            This grueling 24-hour siege tests endurance, skill, and strategic thinking. Those who demonstrate 
+                            exceptional prowess earn passage to the final confrontation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-connector"></div>
+
+                <div class="battle-round aos-animate" data-aos="fade-left">
+                    <div class="round-marker">
+                        <div class="marker-outer">
+                            <div class="marker-inner">II</div>
+                        </div>
+                    </div>
+                    <div class="round-content">
+                        <div class="round-badge elite">Elite Finals</div>
+                        <h3 class="round-title">The Final Battle</h3>
+                        <div class="round-details">
+                            <div class="round-detail">
+                                <span class="detail-label">Date</span>
+                                <span class="detail-value">April 11, 2026</span>
+                            </div>
+                            <div class="round-detail">
+                                <span class="detail-label">Time</span>
+                                <span class="detail-value">09:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="round-detail">
+                                <span class="detail-label">Format</span>
+                                <span class="detail-value">Jeopardy-Style</span>
+                            </div>
+                            <div class="round-detail">
+                                <span class="detail-label">Location</span>
+                                <span class="detail-value">NFSU Goa Campus</span>
+                            </div>
+                        </div>
+                        <p class="round-description">
+                            The <strong>Top 25 teams</strong> converge at the legendary grounds of NFSU Goa for an intense 
+                            offline showdown. Face-to-face combat, real-time leaderboards, and the ultimate test of cyber warfare 
+                            mastery. The Iron Throne awaits its champion.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Houses Section -->
+    <section class="section houses" id="houses">
+        <div class="container">
+            <div class="section-header aos-animate" data-aos="fade-up">
+                <h2 class="section-title">Houses of the Realm</h2>
+                <p class="section-subtitle">Choose your battlefield. Master your domain.</p>
+            </div>
+
+            <div class="houses-grid">
+                <div class="house-card aos-animate" data-aos="flip-left" data-aos-delay="0">
+                    <div class="house-sigil">🕸️</div>
+                    <h3 class="house-name">House of Web</h3>
+                    <p class="house-motto">We Weave and We Exploit</p>
+                    <p class="house-description">
+                        Master the art of web application warfare. Hunt for SQL injections, XSS vulnerabilities, 
+                        authentication bypasses, and server-side exploits.
+                    </p>
+                </div>
+
+                <div class="house-card aos-animate" data-aos="flip-left" data-aos-delay="100">
+                    <div class="house-sigil">🔐</div>
+                    <h3 class="house-name">House of Cryptography</h3>
+                    <p class="house-motto">Secrets We Keep</p>
+                    <p class="house-description">
+                        Break the unbreakable. Decipher ancient ciphers, crack modern encryption schemes, 
+                        and unveil hidden messages concealed in mathematical complexity.
+                    </p>
+                </div>
+
+                <div class="house-card aos-animate" data-aos="flip-left" data-aos-delay="200">
+                    <div class="house-sigil">🔍</div>
+                    <h3 class="house-name">House of Forensics</h3>
+                    <p class="house-motto">Truth We Uncover</p>
+                    <p class="house-description">
+                        Investigate digital crime scenes. Analyze memory dumps, examine network traffic, 
+                        recover deleted data, and piece together the story hidden in binary evidence.
+                    </p>
+                </div>
+
+                <div class="house-card aos-animate" data-aos="flip-left" data-aos-delay="300">
+                    <div class="house-sigil">⚙️</div>
+                    <h3 class="house-name">House of Reversing</h3>
+                    <p class="house-motto">Code We Disassemble</p>
+                    <p class="house-description">
+                        Tear apart compiled binaries. Master assembly language, defeat anti-debugging measures, 
+                        and reveal the logic concealed within executable artifacts.
+                    </p>
+                </div>
+
+                <div class="house-card aos-animate" data-aos="flip-left" data-aos-delay="400">
+                    <div class="house-sigil">👁️</div>
+                    <h3 class="house-name">House of OSINT</h3>
+                    <p class="house-motto">Intelligence We Gather</p>
+                    <p class="house-description">
+                        Hunt across the open web. Track digital footprints, correlate information from disparate sources, 
+                        and demonstrate the art of reconnaissance.
+                    </p>
+                </div>
+
+                <div class="house-card aos-animate" data-aos="flip-left" data-aos-delay="500">
+                    <div class="house-sigil">🎭</div>
+                    <h3 class="house-name">House of Miscellaneous</h3>
+                    <p class="house-motto">Chaos We Command</p>
+                    <p class="house-description">
+                        Face the unexpected. Solve esoteric puzzles, unconventional challenges, and scenarios 
+                        that defy traditional categorization.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prizes Section -->
+    <section class="section prizes" id="prizes">
+        <div class="container">
+            <div class="section-header aos-animate" data-aos="fade-up">
+                <h2 class="section-title">Spoils of War</h2>
+                <p class="section-subtitle">The realm rewards the worthy with gold and glory</p>
+            </div>
+
+            <div class="prize-hero aos-animate" data-aos="fade-up">
+                <div class="prize-core">
+                   
+                   <div class="prize-crest" aria-hidden="true">
+                        <span class="prize-crest-text">Total Cash Prize</span>
+                    </div>
+
+                    <div class="prize-text">
+                        <h1 class="amount">₹2,00,000</h1>
+                        <p class="prize-note">Forged for the fiercest houses of the arena, with cash, elite certifications, domains, platform plans, and sponsor rewards laid bare for every rank.</p>
+                    </div>
+
+                    <div class="divider"></div>
+
+                </div> 
+            </div>
+
+            <div class="prize-spotlight">
+                <article class="royal-card royal-card-first aos-animate" data-aos="fade-up" data-aos-delay="0">
+                    <div class="royal-card-aura" aria-hidden="true"></div>
+                    <div class="royal-card-topline">
+                        <span class="royal-seat">
+                            <span class="royal-seat-icon">♛</span>
+                            Total Worth: ₹6,00,000+
+                        </span>
+                    </div>
+                    <h3 class="royal-title">1st Prize</h3>
+                    <div class="royal-cash">
+                        <span class="royal-cash-label">Cash Prize</span>
+                        <strong class="royal-cash-value">₹1,10,000</strong>
+                    </div>
+                    <ul class="royal-list">
+                        <li>ASCP, ACP, CASA</li>
+                        <li>The XSSRat 900 Bundle</li>
+                        <li>PWNDORA License</li>
+                        <li>Black Perl Academic Access</li>
+                        <li>BCAD Exam &amp; Training Voucher</li>
+                        <li>XYZ Domain</li>
+                        <li>Zsecurity Coupons</li>
+                        <li>C3SA</li>
+                        <li>Beeceptor Team Plan</li>
+                        <li>Altered Security CRTP</li>
+                        <li>Stellar Data Recovery</li>
+                        <li>HackerDNA Pro</li>
+                        <li>Goodies</li>
+                    </ul>
+                </article>
+
+                <article class="royal-card royal-card-second aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="royal-card-aura" aria-hidden="true"></div>
+                    <div class="royal-card-topline">
+                        <span class="royal-seat">
+                            <span class="royal-seat-icon">✦</span>
+                            Total Worth: ₹4,00,000+
+                        </span>
+                    </div>
+                    <h3 class="royal-title">2nd Prize</h3>
+                    <div class="royal-cash">
+                        <span class="royal-cash-label">Cash Prize</span>
+                        <strong class="royal-cash-value">₹60,000</strong>
+                    </div>
+                    <ul class="royal-list">
+                        <li>ASCP, ACP, CASA</li>
+                        <li>The XSSRat 900 Bundle</li>
+                        <li>PWNDORA License</li>
+                        <li>Black Perl Academic Access</li>
+                        <li>BCAD Exam &amp; Training Voucher</li>
+                        <li>XYZ Domain</li>
+                        <li>C3SA</li>
+                        <li>Zsecurity coupons</li>
+                        <li>Stellar Data Recovery</li>
+                        <li>Beeceptor Team Plan</li>
+                        <li>HackerDNA Pro</li>
+                        <li>Goodies</li>
+
+                    </ul>
+                </article>
+
+                <article class="royal-card royal-card-third aos-animate" data-aos="fade-up" data-aos-delay="200">
+                    <div class="royal-card-aura" aria-hidden="true"></div>
+                    <div class="royal-card-topline">
+                        <span class="royal-seat">
+                            <span class="royal-seat-icon">✦</span>
+                            Total Worth: ₹3,55,000+
+                        </span>
+                    </div>
+                    <h3 class="royal-title">3rd Prize</h3>
+                    <div class="royal-cash">
+                        <span class="royal-cash-label">Cash Prize</span>
+                        <strong class="royal-cash-value">₹30,000</strong>
+                    </div>
+                    <ul class="royal-list">
+                        <li>ASCP, ACP, CASA</li>
+                        <li>C3SA</li>
+                        <li>The XSSRat 903 &amp; 907 Bundle</li>
+                        <li>PWNDORA License</li>
+                        <li>Black Perl Academic Access</li>
+                        <li>BCAD Exam &amp; Training Voucher</li>
+                        <li>XYZ Domain</li>
+                        <li>Zsecurity coupons</li>
+                        <li>Stellar Data Recovery</li>
+                        <li>Beeceptor Team Plan</li>
+                        <li>HackerDNA Pro</li>
+                        <li>Goodies</li>
+                        
+                    </ul>
+                </article>
+            </div>
+
+            <div class="prizes-grid detailed-prizes">
+                <article class="prize-item prize-item-wide aos-animate" data-aos="fade-up" data-aos-delay="300">
+                    <div class="prize-item-header">
+                        <div>
+                            <h3 class="prize-rank">4th-10th Place</h3>
+                            <p class="prize-tagline">Rewards for every house that reaches the final circle.</p>
+                        </div>
+                    </div>
+                    <ul class="prize-detail-list">
+                        <li>ACP, CASA, APU</li>
+                        <li>The XSSRat 020 Bundle</li>
+                        <li>C3SA</li>
+                        <li>XYZ Domain</li>
+                        <li>Beeceptor Team Plan</li>
+                        <li>HackerDNA Pro</li>
+                        <li>Goodies</li>
+                    </ul>
+                </article>
+
+                <article class="prize-item prize-item-wide aos-animate" data-aos="fade-up" data-aos-delay="400">
+                    <div class="prize-item-header">
+                        <div>
+                            <h3 class="prize-rank">All Participants</h3>
+                            <p class="prize-tagline">Every warrior leaves the battlefield with something of value.</p>
+                        </div>
+                    </div>
+                    <ul class="prize-detail-list">
+                        <li>Beeceptor Team Plan</li>
+                        <li>The XSSRat 020 Bundle</li>
+                        <li>50% off INE 1year premium subscription</li>
+                        <li>50% off CWL CRTA</li>
+                    </ul>
+                </article>
+            </div>
+             <div class="prize-hero-meta">
+                        <div class="hero-stat">
+                            <span class="hero-stat-label">Top 3 Cash Prize</span>
+                            <strong class="hero-stat-value">₹2,00,000</strong>
+                        </div>
+                         <div class="hero-stat">
+                            <span class="hero-stat-label">Certifications, Vouchers, Goodies</span>
+                            <strong class="hero-stat-value">Worth ₹55,00,000+</strong>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-label">Top 3 Total Worth including Certs, vouchers</span>
+                            <strong class="hero-stat-value">₹13,55,000+</strong>
+                        </div>
+                       
+                    </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section class="section sponsors" id="sponsors">
+        <div class="container">
+            <div class="section-header aos-animate" data-aos="fade-up">
+                
+
+<!-- Sponsors Section Header -->
+<div class="sponsors-header">
+    <h2 class="sponsors-main-title">Our Sponsors</h2>
+    <p class="sponsors-subtitle">
+        Grateful to these amazing organizations for making Kaalchakra CTF 2026 possible
+    </p>
+</div>
+
+<!-- Sponsors Showcase -->
+<div class="sponsors-showcase">
+
+    <!-- Platinum -->
+    <div class="sponsor-tier">
+        <h3 class="tier-title platinum-tier">Platinum</h3>
+        <div class="sponsor-grid platinum-grid">
+	
+	 <div class="sponsor-item">
+            <a href="https://forensiccybertech.com/" target="_blank">
+
+            <div class="sponsor-card platinum-card">
+                    <img src="../images/sponsors/fct1.png" alt="FCT">
+                
+	    </div></a>
+		<p class="sponsor-name">Forensic CyberTech Pvt. Ltd.</p>
+            </div>
+
+	     <div class="sponsor-item">
+            <a href="https://scrs.in/" target="_blank">
+
+            <div class="sponsor-card platinum-card">
+                    <img src="../images/sponsors/SCRS.png" alt="scrs" class="logo-circle">
+                
+	    </div></a>
+		<p class="sponsor-name">Soft Computing Research Society</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Diamond -->
+    <div class="sponsor-tier">
+        <h3 class="tier-title diamond-tier">Diamond</h3>
+        <div class="sponsor-grid">
+            
+            <div class="sponsor-item">
+            <a href="https://cyphyts.in/" target="_blank">
+
+            <div class="sponsor-card diamond-card">
+                    <img src="../images/sponsors/Cyphy.png" alt="Cyphy">
+                
+	    </div></a>
+<p class="sponsor-name">Cyphy Tech Security Pvt. Ltd.</p>
+            </div>
+
+            <div class="sponsor-item">
+            <a href="https://blackperldfir.com/" target="_blank">
+
+            <div class="sponsor-card diamond-card">
+                <img src="../images/sponsors/blackperl.png" alt="blackperl">
+                
+	    </div></a>
+		<p class="sponsor-name">BlackPerl</p>
+            </div>
+
+
+            
+        </div>
+    </div>
+
+    <!-- GOLD -->
+    <div class="sponsor-tier">
+        <h3 class="tier-title gold-tier">GOLD</h3>
+        <div class="sponsor-grid">
+
+            <div class="sponsor-item">
+            <a href="https://www.esecforte.com/" target="_blank">
+
+            <div class="sponsor-card gold-card">
+            <img src="../images/sponsors/esecforte_Logo_Light.svg" alt="esec" class="logo-wide">
+                
+	    </div></a>
+	   <p class="sponsor-name">eSec Forte Technologies Pvt. Ltd.</p>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
+<!-- API Partner -->
+<div class="partners-row">
+
+    <!-- API PARTNER -->
+    <div class="partner-section">
+        <h3 class="tier-title api-tier">API Partner</h3>
+        <div class="sponsor-grid">
+
+<div class="sponsor-item">
+            <a href="https://beeceptor.com" target="_blank">
+            <div class="sponsor-card API-card">
+            <img src="../images/sponsors/beeceptor-logo-horizontal.png" alt="Beecptor">    
+	    </div></a>
+	    <p class="sponsor-name">Beeceptor</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PLATFORM PARTNER -->
+    <div class="partner-section">
+        <h3 class="tier-title api-tier">Platform Partner</h3>
+      
+         <div class="sponsor-item">
+                 <a href="https://ctf7.com/" target="_blank">
+                 <div class="sponsor-card API-card">
+                    <img src="../images/sponsors/CTF7-light.webp" alt="Platform Partner">
+            </div></a>   
+	    <p class="sponsor-name">CTF7</p>
+        </div>
+        </div>
+    
+
+</div>
+<!-- IN-KIND -->
+<div class="sponsor-tier">
+    <h3 class="tier-title inkind-tier">IN-KIND PARTNERS</h3>
+
+    <div class="sponsor-grid inkind-grid">
+
+    <div class="sponsor-item">
+            <a href="https://www.apisecuniversity.com/" target="_blank">
+
+            <div class="sponsor-card inkind-card">
+                    <img src="../images/sponsors/apisec-logo.png" alt="apisec">
+                
+	    </div></a>
+		<p class="sponsor-name">APIsec University</p>
+            </div>
+
+            <div class="sponsor-item">
+                 <a href="https://www.stellarinfo.com/" target="_blank">
+
+            <div class="sponsor-card inkind-card">
+                    <img src="../images/sponsors/Stellar_Logo.svg" alt="stellar">
+                
+	    </div></a>
+		<p class="sponsor-name">Stellar Data Recovery</p>
+            </div>
+
+     <div class="sponsor-item">
+            <a href="https://ine.com/" target="_blank">
+
+            <div class="sponsor-card inkind-card">
+                    <img src="../images/sponsors/ine_logo.png" alt="INE">
+                
+	    </div></a>
+		<p class="sponsor-name">INE</p>
+            </div>
+
+           <div class="sponsor-item">
+            <a href="https://www.alteredsecurity.com/" target="_blank">
+
+            <div class="sponsor-card inkind-card">
+                    <img src="../images/sponsors/AS_Logo.png" alt="altered">
+                
+	    </div></a>
+		<p class="sponsor-name">Altered Security</p>
+            </div>
+
+        <div class="sponsor-item">
+           <a href="https://zsecurity.org/" target="_blank">
+
+            <div class="sponsor-card inkind-card">
+                  <img src="../images/sponsors/zSecurity_Logo.png" alt="Zsecurity">
+                
+	    </div></a>
+		<p class="sponsor-name">zSecurity</p>
+            </div>
+
+        <div class="sponsor-item">
+           <a href="https://cyberwarfare.live/" target="_blank">
+
+            <div class="sponsor-card inkind-card">
+                 <img src="../images/sponsors/cwl_logo.png" alt="CWL">
+                
+	    </div></a>
+		<p class="sponsor-name">CyberWarFare Labs</p>
+            </div>    
+
+        <div class="sponsor-item">
+           <a href="http://thexssrat.com/" target="_blank">
+
+            <div class="sponsor-card inkind-card">
+                <img src="../images/sponsors/xss.png" alt="XssRat">
+                
+	    </div></a>
+		<p class="sponsor-name">The XSS Rat</p>
+            </div>
+
+        
+            <div class="sponsor-item">
+            <a href="https://hackerdna.com/" target="_blank">
+
+            <div class="sponsor-card inkind-card.hackerdna">
+                    <img src="../images/sponsors/logo-full-dark.svg" alt="HackerDna">
+                
+	    </div></a>
+		<p class="sponsor-name">HackerDNA</p>
+            </div>
+
+       <div class="sponsor-item">
+            <a href="https://nic.xyz/" target="_blank">
+
+            <div class="sponsor-card inkind-card">
+                    <img src="../images/sponsors/xyz-logo-color.png" alt="xyz">
+                
+	    </div></a>
+		<p class="sponsor-name">.xyz</p>
+            </div>
+
+       
+    </div>
+</div>
+
+           
+                <div class="contact-actions" data-aos="fade-up" data-aos-delay="200">
+                    
+                        <a href="#legacy" class="cta-primary" target="_blank" rel="noopener noreferrer" onclick="gtag('event','register_click');"> Registration Closed </a>
+
+                
+            </div>
+        </div>
+<div class="social-links">
+    <a href="https://instagram.com/kaalchakra_ctf" target="_blank" rel="noopener">
+           <img src="../icons/instagram.svg" alt="Instagram" class="social-icon">
+
+
+        
+    </a>
+
+    <a href="https://linkedin.com/in/kaalchakra-ctf" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" class="social-icon">
+            <path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.8-3s-2 1.4-2 2.9v5.7H9.4V9h3.4v1.6h.1c.5-.9 1.7-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.4v6.2zM5.3 7.4c-1.2 0-2.1-1-2.1-2.2S4.1 3 5.3 3s2.2 1 2.2 2.2-1 2.2-2.2 2.2zM7.1 20.4H3.5V9h3.6v11.4z"></path>
+        </svg>
+    </a>
+
+    <a href="https://twitter.com/KaalChakra_CTF" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" class="social-icon">
+            <path d="M18.244 2H21.5l-7.19 8.21L22.5 22h-6.53l-5.11-6.63L4.98 22H1.72l7.7-8.8L1.5 2h6.69l4.62 6.1L18.244 2z"></path>
+        </svg>
+    </a>
+</div>
+
+    </div></section>
+
+    <!-- KAALCHAKRA 1.0 Legacy / Stats Section -->
+    <section class="section legacy" id="legacy">
+        <div class="container">
+            <div class="section-header aos-animate" data-aos="fade-up">
+                <h2 class="section-title">KAALCHAKRA 1.0</h2>
+                <p class="section-subtitle">Our first edition, held 28 March to 11 April 2026.</p>
+            </div>
+
+            <div class="legacy-grid">
+                <div class="stat-card aos-animate" data-aos="fade-up" data-aos-delay="0">
+                    <div class="stat-number">600+</div>
+                    <div class="stat-label">Participants Across India</div>
+                </div>
+                <div class="stat-card aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number">25</div>
+                    <div class="stat-label">Finalist Teams at Goa</div>
+                </div>
+                <div class="stat-card aos-animate" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number">₹2,00,000</div>
+                    <div class="stat-label">Cash Prize Pool</div>
+                </div>
+                <div class="stat-card aos-animate" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number">7</div>
+                    <div class="stat-label">Challenge Categories</div>
+                </div>
+                <div class="stat-card aos-animate" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-number">16</div>
+                    <div class="stat-label">Sponsors &amp; Partners</div>
+                </div>
+                <div class="stat-card aos-animate" data-aos="fade-up" data-aos-delay="500">
+                    <div class="stat-number">₹55L+</div>
+                    <div class="stat-label">In Participant Perks</div>
+                </div>
+            </div>
+
+            <div class="section-header aos-animate" data-aos="fade-up" style="margin-top: 4rem;">
+                <h3 class="section-title" style="font-size: 1.8rem;">Champions of 1.0</h3>
+            </div>
+
+            <div class="legacy-grid podium-grid">
+                <div class="stat-card podium-card aos-animate" data-aos="flip-left" data-aos-delay="0">
+                    <div class="podium-rank">🥇 1st</div>
+                    <h3 class="podium-team">root@void</h3>
+                    <p class="podium-prize">₹1,10,000</p>
+                </div>
+                <div class="stat-card podium-card aos-animate" data-aos="flip-left" data-aos-delay="100">
+                    <div class="podium-rank">🥈 2nd</div>
+                    <h3 class="podium-team">Cryptonite</h3>
+                    <p class="podium-prize">₹60,000</p>
+                </div>
+                <div class="stat-card podium-card aos-animate" data-aos="flip-left" data-aos-delay="200">
+                    <div class="podium-rank">🥉 3rd</div>
+                    <h3 class="podium-team">ISFCR PESU</h3>
+                    <p class="podium-prize">₹30,000</p>
+                </div>
+            </div>
+
+            <div class="legacy-cta aos-animate" data-aos="fade-up">
+                <a href="stats-1.0.html" class="cta-primary">
+                    View Full 1.0 Stats
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="footer-logo-text">कालचक्र</span>
+                <span class="footer-logo-subtitle">KAALCHAKRA 2026</span>
+            </div>
+            <div class="footer-text">
+                National Level Cyber Security CTF <br>
+                <b><br>Organized by <br> National Forensic Sciences University, Goa Campus
+                <br> x <br> TH3_RANG3RS
+            </b></div><b>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p>© 2026 KAALCHAKRA - NFSU GOA. All rights reserved.</p>
+                <p class="footer-tagline">When you play the game of flags, you win or you die.</p>
+            </div>
+        </b></div><b>
+    </b></footer>
+
+    <dialog class="edition-reveal" id="editionReveal" aria-labelledby="editionRevealTitle">
+        <div class="edition-reveal__panel">
+            <div class="edition-reveal__header">
+                <span class="edition-reveal__label">Official logo reveal</span>
+                <button class="edition-reveal__close" type="button" aria-label="Close logo reveal" autofocus></button>
+            </div>
+
+            <div class="edition-reveal__stage">
+                <div class="edition-reveal__chart" aria-hidden="true">
+                    <div class="edition-reveal__compass"></div>
+                </div>
+                <p class="edition-reveal__status" role="status">Loading video…</p>
+                <video class="edition-reveal__video" src="../videos/popup_video.mp4" preload="none" muted playsinline loop aria-label="KAALCHAKRA 2.0 logo reveal"></video>
+            </div>
+
+            <div class="edition-reveal__caption">
+                <h2 id="editionRevealTitle">KAALCHAKRA CTF <em>2.0</em></h2>
+                <p>National Level Championship</p>
+                <p>Coming soon</p>
+            </div>
+        </div>
+    </dialog>
+
+    <script>window.KAALCHAKRA_ARCHIVE = true;</script>
+    <script src="script.js"></script>
+
+
+<div style="position: fixed; width: 20px; height: 20px; border-radius: 50%; background: radial-gradient(circle, rgba(201, 169, 97, 0.3) 0%, transparent 70%); pointer-events: none; z-index: 9999; transition: transform 0.15s; left: 914px; top: 592px;"></div><aside style="position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:10001;background:#131a20;color:#eed5a0;border:1px solid #b39456;padding:12px 20px;text-align:center;font:14px/1.5 system-ui;width:max-content;max-width:90vw;box-sizing:border-box">Past edition: 1.0 &middot; Mar &ndash; Apr 2026 &nbsp; <a href="../index.html" style="color:#eed5a0;text-decoration:underline">Back to 2.0</a></aside></body></html>
