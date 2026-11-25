@@ -76,7 +76,7 @@ const scene = $('.scene-two'), story = $('.intro-story'), shade = $('.world-shad
 const track = $('.journey-track'), wheel = $('.journey-wheel img'), stages = $$('.journey-card'), markers = $$('.journey-markers span');
 const chestClosed = $('.chest-closed'), chestOpen = $('.chest-open'), treasureLight = $('.treasure-light');
 const bountyStage = $('.bounty-stage'), bountyScene = $('.treasure-scene'), bountyRings = $('.vault-rings'), bountyKey = $('.bounty-key');
-const bountyPulse = $('.vault-spark-ring'), bountyCue = $('.bounty-scroll-cue'), bountyAnnouncement = $('.bounty-announcement');
+const bountyPulse = $('.vault-spark-ring'), bountyCue = $('.bounty-scroll-cue');
 const bountyBriefs = $$('.bounty-brief'), bountyChapters = $$('.bounty-chapters span');
 const vaultLanternLit = $('.vault-lantern-lit'), vaultLanternUnlit = $('.vault-lantern-unlit');
 const bountyLoot = $$('.bounty-loot').map(element => ({ element, x: Number(element.dataset.x), y: Number(element.dataset.y), turn: Number(element.dataset.turn) }));
@@ -173,7 +173,6 @@ function paintBounty(progress) {
   const phase = p < .27 ? 0 : p < .64 ? 1 : 2;
   bountyBriefs.forEach((brief, i) => { brief.classList.toggle('active', i === phase); brief.setAttribute('aria-hidden', String(i !== phase)); bountyChapters[i].classList.toggle('active', i === phase); });
   bountyCue.style.opacity = 1 - segment(p, .58, .8);
-  bountyAnnouncement.style.opacity = segment(p, .68, .88);
 }
 bountyStage.addEventListener('pointermove', event => {
   if (paused || !matchMedia('(hover: hover) and (pointer: fine)').matches) return;
@@ -203,6 +202,7 @@ const voyageChart = $('.timeline-chart'), voyageMap = $('.timeline-map'), voyage
 const voyagePorts = $$('.route-port'), voyageEntries = $$('.timeline-stops .log-entry');
 let voyageProgress = 0;
 function paintVoyage(progress) {
+  if ($('#voyage').hidden) return;
   voyageProgress = clamp(progress);
   window.KaalchakraAudio?.scene('voyage', voyageProgress);
   const point = route.getPointAtLength(routeLength * voyageProgress);
