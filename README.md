@@ -4,8 +4,7 @@ Static website for KAALCHAKRA CTF, organized by NFSU Goa and TH3_RANG3RS.
 
 - `/index.html` — edition 2.0, with the Pirates of the Caribbean theme.
 - `/1.0/index.html` — preserved first edition (28 March–11 April 2026).
-- `/1.0/organizers.html` — first edition organizers.
-- `/1.0/stats-1.0.html` — first edition results and leaderboard.
+- `/1.0/organizers.html` and `/1.0/stats-1.0.html` — redirects to the first edition highlights.
 
 The old root organizers and results URLs redirect to their archived pages.
 Archive assets are shared from `/images/`, `/icons/`, `/brochure/`, and `/videos/`;
@@ -58,5 +57,4 @@ from the first edition. Update these details when confirmed.
 
 Deploy this directory to the existing static host with directory-index support
 (`index.html`). This makes `/1.0/` available on the same domain. Canonical URLs
-currently use `https://kaalchakra.com`, as requested; update them if the final
-production domain differs. No hosting or domain changes have been made locally.
+use `https://kaalchakractf.com`. No hosting or domain changes have been made locally.
