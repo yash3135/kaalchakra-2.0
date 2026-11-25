@@ -456,3 +456,32 @@ footer { padding-bottom: 80px; }
   .bounty-announcement { font-size: 8px; width: min(330px, 100%); }
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+
+/* Competition information and the prize reveal. */
+.rules { background: linear-gradient(180deg, #091411f5, #101d18f5); }
+.rules-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.rules-grid article { min-width: 0; padding: 28px; border: 1px solid var(--line); background: #07120fcc; }
+.rules-grid h3 { color: var(--light); font-size: 20px; line-height: 1.4; margin-bottom: 12px; }
+.rules-grid p { color: #c6c7b0; font-size: 19px; line-height: 1.6; }
+.prize-reveal { position: absolute; z-index: 6; left: 50%; top: 17%; width: min(80%, 300px); padding: 13px 15px; transform: translate(-50%, calc(22px - var(--bounty-open) * 22px)) scale(calc(.85 + var(--bounty-open) * .15)); opacity: clamp(0, (var(--bounty-open) - .55) * 2.3, 1); text-align: center; color: #fff0bc; border: 1px solid #e8cb80aa; background: linear-gradient(145deg, #17261ded, #0b1512f5); box-shadow: 0 0 30px #e4b94d66, inset 0 0 20px #c99c3c22; pointer-events: none; }
+.prize-reveal span, .prize-reveal b { display: block; font: 600 10px/1.5 var(--ui); letter-spacing: .14em; }
+.prize-reveal strong { display: block; margin: 4px 0; font: 700 clamp(20px, 2.4vw, 32px)/1.2 var(--display); color: #f4d588; }
+.motion-paused .prize-reveal { opacity: 1; transform: translate(-50%, 0); }
+@media (max-width: 900px) { .rules-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 700px) {
+  .rules-grid { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .rules-grid article { padding: 22px; }
+  .rules-grid p { font-size: 18px; }
+  .prize-reveal { top: 5%; width: min(78%, 260px); padding: 8px 12px; }
+  .prize-reveal strong { font-size: 21px; }
+  .prize-reveal span, .prize-reveal b { font-size: 9px; }
+  .site-header nav { max-height: calc(100dvh - 76px); overflow-y: auto; overscroll-behavior: contain; }
+  .button { max-width: 100%; text-align: center; }
+}
+@media (max-width: 380px) {
+  .container { width: calc(100% - 32px); }
+  .intro-brand h1 { font-size: clamp(28px, 9vw, 36px); }
+  .hero-cta { min-width: 0; width: min(285px, 100%); font-size: 16px; }
+  .launch-note { letter-spacing: .08em; }
+  .rules-grid h3 { font-size: 18px; }
+}
