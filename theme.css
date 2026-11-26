@@ -69,3 +69,7 @@ html[data-theme="light"] .registration-options small,html[data-theme="light"] .r
 /* Keep the Editions chevron next to and vertically centered with its label. */
 .site-header .edition-menu summary { align-items: center; justify-content: flex-start; gap: 7px; }
 .site-header .edition-menu summary > span { display: inline-block; flex: 0 0 auto; width: 7px; height: 7px; margin: -3px 0 0; border-right: 1px solid currentColor; border-bottom: 1px solid currentColor; transform: rotate(45deg); font-size: 0; line-height: 0; }
+
+.intro-brand h1 > span { font-size: 1em; vertical-align: baseline; letter-spacing: inherit; }
+.rules-terms { margin-top: 28px; font: 14px/1.7 'Manrope', sans-serif; }
+@media (max-width: 700px) { .intro-brand h1 { white-space: normal; font-size: clamp(25px, 6.7vw, 48px); } }
