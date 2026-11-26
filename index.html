@@ -25,6 +25,7 @@
   <script src="theme.js"></script>
   <script src="pirate-audio.js" defer></script>
   <script src="pirate.js" defer></script>
+  <script src="registration.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -33,7 +34,7 @@
 <header class="site-header">
   <img class="nav-lantern nav-lantern-left" src="images/2.0/lantern_ok.png" alt="">
   <a class="brand" href="#home" aria-label="KAALCHAKRA 2.0 home"><img class="nav-logo" src="images/2.0/logo.webp" alt="" width="52" height="52"><span>KAALCHAKRA<small>CAPTURE THE FLAG · 2.0</small></span></a>
-  <nav id="navigation" aria-label="Main navigation"><a href="#about">About</a><a href="#journey">Stages</a><a href="#challenges">Domains</a><a href="#sponsors">Sponsors</a><a href="#bounty">Prizes</a><details class="edition-menu"><summary>Editions <span aria-hidden="true">⌄</span></summary><div><a href="1.0/index.html">1.0 <span>(Mar – 2026)</span><small>View the first edition</small></a></div></details><a href="#rules">Rules</a><a href="#faq">FAQ</a><a href="crew.html">Crew</a><a href="#crew">Contact</a></nav>
+  <nav id="navigation" aria-label="Main navigation"><a href="#about">About</a><a href="#journey">Stages</a><a href="#challenges">Domains</a><a href="#sponsors">Sponsors</a><a href="#bounty">Prizes</a><details class="edition-menu"><summary>Editions <span aria-hidden="true">⌄</span></summary><div><a href="1.0/">1.0 <span>(Mar – 2026)</span><small>View the first edition</small></a></div></details><a href="#rules">Rules</a><a href="#faq">FAQ</a><a href="crew/">Crew</a><a href="#crew">Contact</a></nav>
   <img class="nav-institute" src="images/emblem.png" alt="NFSU Goa" width="48" height="58">
   <button class="menu-toggle" aria-expanded="false" aria-controls="navigation" aria-label="Toggle navigation"><span></span><span></span></button>
   <img class="nav-lantern nav-lantern-right" src="images/2.0/lantern_ok.png" alt="">
@@ -42,12 +43,12 @@
 <section class="intro-wrapper" id="home" aria-label="KAALCHAKRA CTF 2.0">
  <div class="intro-stage">
   <div class="intro-brand">
-   <p class="eyebrow host-kicker">NATIONAL FORENSIC SCIENCES UNIVERSITY, GOA<br><span>×</span><br>TH3_RANG3RS PRESENT</p>
+   <p class="eyebrow host-kicker">NATIONAL FORENSIC SCIENCES UNIVERSITY, GOA<br><span>×</span><br>TH3_RANG3RS<br>PRESENTS</p>
    <div class="emblem-stage"><div class="emblem-orbit" aria-hidden="true"></div><img class="hero-emblem" src="images/2.0/logo.webp" alt="Kaalchakra pirate compass emblem" width="938" height="938"></div>
    <p class="edition-kicker">NATIONAL LEVEL COMPETITION</p>
    <h1>KAALCHAKRA CTF<span>2.0</span></h1>
    <p class="hero-tagline">Solve challenges. <em>Capture flags.</em></p>
-   <a class="button button-gold hero-cta" href="#crew"><span class="button-flourish" aria-hidden="true">✦</span> Join the community <span class="button-flourish" aria-hidden="true">✦</span></a>
+   <button class="button button-gold hero-cta" type="button" id="register-open"><span class="button-flourish" aria-hidden="true">✦</span> Register for the CTF <span class="button-flourish" aria-hidden="true">✦</span></button>
    <p class="launch-note">NATIONAL LEVEL CTF <span>·</span> COMING SOON</p>
    <button class="watch-reveal" id="watch-reveal"><span aria-hidden="true">▷</span> Watch the official reveal</button>
    <div class="intro-cue"><span>SCROLL TO EXPLORE</span><i></i></div>
@@ -62,11 +63,11 @@
 <section class="about section" id="about"><img class="about-rope" src="images/2.0/rope1.png" alt="" aria-hidden="true" loading="lazy"><div class="container about-layout">
  <div class="dispatch reveal"><img class="paper-arrow" src="images/2.0/arrow.png" alt="" aria-hidden="true" loading="lazy"><span class="dispatch-top">KAALCHAKRA CTF 2.0</span><div class="dispatch-rule"></div><p class="dispatch-small">Calling all problem solvers</p><h2>CTF 2.0</h2><p class="dispatch-sub">A NATIONAL CYBERSECURITY COMPETITION</p><img src="images/2.0/logo.webp" alt="" width="150" height="150" loading="lazy"><p>Learn. Solve challenges.<br>Capture the flags.</p><span class="dispatch-seal">KAALCHAKRA · 2.0</span><img class="dispatch-parrot" src="images/2.0/parrot.png" alt="" loading="lazy"></div>
  <div class="about-copy reveal"><p class="eyebrow">ABOUT THE COMPETITION</p><h2>Think critically.<br>Work together.<br><em>Capture the flag.</em></h2><div class="gold-rule" aria-hidden="true">✦</div><p>KAALCHAKRA CTF 2.0 is a national-level cybersecurity competition. Work together to solve challenges and capture flags.</p><dl class="competition-facts" aria-label="Competition details">
- <div><dt>Format</dt><dd>Jeopardy CTF</dd></div>
+ <div><dt>Format</dt><dd>To be announced</dd></div>
  <div><dt>Team size</dt><dd>1&ndash;3 members</dd></div>
  <div><dt>Qualifier</dt><dd>Online <span aria-hidden="true">&middot;</span> 24 h</dd></div>
- <div><dt>Final</dt><dd>Offline <span aria-hidden="true">&middot;</span> 8 h<small>NFSU Goa</small></dd></div>
- <div class="competition-fee"><dt>Registration fee</dt><dd>₹350 <small>(Inclusive of GST)</small></dd></div>
+ <div><dt>Final</dt><dd>Details to be announced</dd></div>
+ <div class="competition-fee"><dt>Student registration fee</dt><dd>₹350 <small>(inclusive of GST)</small></dd></div>
 </dl><p class="about-note">Dates, eligibility, and registration details will be announced soon.</p><div class="host-lockup"><img src="images/emblem.png" alt="NFSU emblem" width="50" height="60"><div>Organized by<strong>National Forensic Sciences University, Goa</strong><span>in collaboration with TH3_RANG3RS</span></div></div></div>
 </div></section>
 <section class="journey-wrapper participation-tracks" id="journey" aria-labelledby="journey-title"><div class="journey-stage">
@@ -76,7 +77,7 @@
   <article class="journey-card">
    <div class="track-meta"><p class="eyebrow">BRACKET I</p><span class="track-access">Open</span></div><h3>Students</h3><p class="track-audience">UG &amp; PG &middot; recognised institutions</p>
    <p class="track-description">The proving ground for the next generation of defenders, and where NFSU meets emerging cyber talent from across India.</p>
-   <ul class="track-benefits"><li>Teams of 1&ndash;3 with a valid institutional ID</li><li>Dedicated student leaderboard and prizes</li><li>Participation rewards for every registered team</li></ul>
+   <ul class="track-benefits"><li>Teams of 1&ndash;3 with a valid institutional ID</li><li>Registration fee: ₹350 (inclusive of GST)</li><li>Dedicated student leaderboard and prizes</li><li>Participation rewards for every registered team</li></ul>
   </article>
   <article class="journey-card">
    <div class="track-meta"><p class="eyebrow">BRACKET II</p><span class="track-access">Open</span></div><h3>Professionals</h3><p class="track-audience">Industry &middot; researchers &middot; red teams</p>
@@ -107,34 +108,34 @@
 <article class="domain-panel" role="tabpanel" id="domain-osint" aria-labelledby="tab-osint" tabindex="0" hidden><img src="images/2.0/ink_paper.png" alt="" loading="lazy"><p class="eyebrow">OSINT</p><h3>Investigate public information.</h3><p>Use publicly available information to investigate clues and answer questions.</p><span class="domain-tags">RECONNAISSANCE · RESEARCH · CONNECTIONS</span><span class="manifest-note">Category preview. Final challenges will be announced soon.</span></article>
 <article class="domain-panel" role="tabpanel" id="domain-misc" aria-labelledby="tab-misc" tabindex="0" hidden><img src="images/2.0/bottle.png" alt="" loading="lazy"><p class="eyebrow">MISCELLANEOUS</p><h3>Expect the unexpected.</h3><p>Solve puzzles and challenges that do not fit into a single category.</p><span class="domain-tags">STEGANOGRAPHY · PUZZLES · CURIOSITY</span><span class="manifest-note">Category preview. Final challenges will be announced soon.</span></article></div></div></div></section>
 <section class="sponsors section" id="sponsors" aria-labelledby="sponsors-title"><div class="container">
- <div class="sponsorship-heading"><p class="eyebrow">KAALCHAKRA CTF 2.0</p><h2 id="sponsors-title">Sponsors &amp; <em>partners.</em></h2><p>Partner with us to support the competition and its participants.</p></div>
+ <div class="sponsorship-heading"><p class="eyebrow">KAALCHAKRA CTF 2.0</p><h2 id="sponsors-title">Sponsors &amp; <em>partners.</em></h2><p>Partner with us to support the competition and its participants.</p><button class="button button-gold sponsor-form-button" type="button" disabled>Become a sponsor · Form coming soon</button></div>
  <div class="sponsorship-tiers">
   <section class="sponsorship-tier" aria-label="Diamond sponsorship"><div class="sponsorship-tier-heading"><h3>Diamond</h3><p>₹2,50,000 and above</p></div><div class="sponsorship-slots">
-   <a class="sponsorship-slot" href="mailto:sponsors@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Diamond%20Sponsorship" aria-label="Enquire about Diamond sponsorship"><span>Become a sponsor</span></a>
+   <a class="sponsorship-slot" href="mailto:support@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Diamond%20Sponsorship" aria-label="Enquire about Diamond sponsorship"><span>Become a sponsor</span></a>
   </div></section>
   <section class="sponsorship-tier" aria-label="Platinum sponsorship"><div class="sponsorship-tier-heading"><h3>Platinum</h3><p>₹1,50,000 – ₹2,50,000</p></div><div class="sponsorship-slots">
-   <a class="sponsorship-slot" href="mailto:sponsors@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Platinum%20Sponsorship" aria-label="Enquire about Platinum sponsorship"><span>Become a sponsor</span></a>
-   <a class="sponsorship-slot" href="mailto:sponsors@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Platinum%20Sponsorship" aria-label="Enquire about Platinum sponsorship"><span>Become a sponsor</span></a>
+   <a class="sponsorship-slot" href="mailto:support@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Platinum%20Sponsorship" aria-label="Enquire about Platinum sponsorship"><span>Become a sponsor</span></a>
+   <a class="sponsorship-slot" href="mailto:support@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Platinum%20Sponsorship" aria-label="Enquire about Platinum sponsorship"><span>Become a sponsor</span></a>
   </div></section>
   <section class="sponsorship-tier" aria-label="Gold sponsorship"><div class="sponsorship-tier-heading"><h3>Gold</h3><p>₹1,00,000 – ₹1,50,000</p></div><div class="sponsorship-slots">
-   <a class="sponsorship-slot" href="mailto:sponsors@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Gold%20Sponsorship" aria-label="Enquire about Gold sponsorship"><span>Become a sponsor</span></a>
-   <a class="sponsorship-slot" href="mailto:sponsors@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Gold%20Sponsorship" aria-label="Enquire about Gold sponsorship"><span>Become a sponsor</span></a>
-   <a class="sponsorship-slot" href="mailto:sponsors@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Gold%20Sponsorship" aria-label="Enquire about Gold sponsorship"><span>Become a sponsor</span></a>
+   <a class="sponsorship-slot" href="mailto:support@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Gold%20Sponsorship" aria-label="Enquire about Gold sponsorship"><span>Become a sponsor</span></a>
+   <a class="sponsorship-slot" href="mailto:support@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Gold%20Sponsorship" aria-label="Enquire about Gold sponsorship"><span>Become a sponsor</span></a>
+   <a class="sponsorship-slot" href="mailto:support@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Gold%20Sponsorship" aria-label="Enquire about Gold sponsorship"><span>Become a sponsor</span></a>
   </div></section>
   <section class="sponsorship-tier" aria-label="Silver sponsorship"><div class="sponsorship-tier-heading"><h3>Silver</h3><p>₹25,000 – ₹1,00,000</p></div><div class="sponsorship-slots">
-   <a class="sponsorship-slot" href="mailto:sponsors@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Silver%20Sponsorship" aria-label="Enquire about Silver sponsorship"><span>Become a sponsor</span></a>
-   <a class="sponsorship-slot" href="mailto:sponsors@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Silver%20Sponsorship" aria-label="Enquire about Silver sponsorship"><span>Become a sponsor</span></a>
-   <a class="sponsorship-slot" href="mailto:sponsors@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Silver%20Sponsorship" aria-label="Enquire about Silver sponsorship"><span>Become a sponsor</span></a>
-   <a class="sponsorship-slot" href="mailto:sponsors@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Silver%20Sponsorship" aria-label="Enquire about Silver sponsorship"><span>Become a sponsor</span></a>
-   <a class="sponsorship-slot" href="mailto:sponsors@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Silver%20Sponsorship" aria-label="Enquire about Silver sponsorship"><span>Become a sponsor</span></a>
+   <a class="sponsorship-slot" href="mailto:support@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Silver%20Sponsorship" aria-label="Enquire about Silver sponsorship"><span>Become a sponsor</span></a>
+   <a class="sponsorship-slot" href="mailto:support@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Silver%20Sponsorship" aria-label="Enquire about Silver sponsorship"><span>Become a sponsor</span></a>
+   <a class="sponsorship-slot" href="mailto:support@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Silver%20Sponsorship" aria-label="Enquire about Silver sponsorship"><span>Become a sponsor</span></a>
+   <a class="sponsorship-slot" href="mailto:support@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Silver%20Sponsorship" aria-label="Enquire about Silver sponsorship"><span>Become a sponsor</span></a>
+   <a class="sponsorship-slot" href="mailto:support@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Silver%20Sponsorship" aria-label="Enquire about Silver sponsorship"><span>Become a sponsor</span></a>
   </div></section>
   <section class="sponsorship-tier" aria-labelledby="in-kind-title"><div class="sponsorship-tier-heading"><h3 id="in-kind-title">In-kind partners</h3><p>Partner quantities to be determined</p></div><div class="sponsorship-slots sponsorship-partners">
-   <a class="sponsorship-slot" href="mailto:sponsors@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Partnership"><span>Voucher &amp; Rewards Partner</span><small>Enquire about partnering</small></a>
-   <a class="sponsorship-slot" href="mailto:sponsors@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Partnership"><span>Merchandise Partner</span><small>Enquire about partnering</small></a>
-   <a class="sponsorship-slot" href="mailto:sponsors@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Partnership"><span>Goodies Partner</span><small>Enquire about partnering</small></a>
+   <a class="sponsorship-slot" href="mailto:support@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Partnership"><span>Voucher &amp; Rewards Partner</span><small>Enquire about partnering</small></a>
+   <a class="sponsorship-slot" href="mailto:support@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Partnership"><span>Merchandise Partner</span><small>Enquire about partnering</small></a>
+   <a class="sponsorship-slot" href="mailto:support@kaalchakractf.com?subject=KAALCHAKRA%202.0%20Partnership"><span>Goodies Partner</span><small>Enquire about partnering</small></a>
   </div></section>
- </div><p class="sponsorship-contact">Sponsorship enquiries: <a href="mailto:sponsors@kaalchakractf.com">sponsors@kaalchakractf.com</a></p>
- <p class="sponsorship-archive"><a href="1.0/index.html#sponsors">View the KAALCHAKRA 1.0 sponsors</a></p>
+ </div><p class="sponsorship-contact">Sponsorship enquiries: <a href="mailto:support@kaalchakractf.com">support@kaalchakractf.com</a></p>
+ 
 </div></section>
 <section class="timeline timeline-wrapper" id="voyage" aria-labelledby="log-title" hidden><div class="timeline-stage"><div class="container">
  <div class="section-heading"><p class="eyebrow">COMPETITION TIMELINE</p><h2 id="log-title">Competition <em>timeline.</em></h2><p>Scroll to explore the planned milestones. Dates will be announced soon.</p></div>
@@ -199,11 +200,11 @@
  </div>
  <div class="container bounty-bottom"><div class="bounty-chapters" aria-label="Treasure reveal stages"><span class="active"><i></i>Discover</span><b></b><span><i></i>Unlock</span><b></b><span><i></i>Claim</span></div><p class="bounty-scroll-cue">SCROLL TO OPEN THE CHEST</p></div>
 </div></section>
-<section class="legacy section" id="legacy"><div class="container"><div class="section-heading reveal"><p class="eyebrow">FROM THE ARCHIVES</p><h2>Explore the <em>first edition.</em></h2></div><div class="archive-layout reveal"><div class="archive-crest"><img src="images/CTF_Logo.webp" alt="KAALCHAKRA first edition emblem" loading="lazy"><span>THE FIRST CHAPTER</span></div><div class="archive-copy"><p class="archive-date">28 MARCH – 11 APRIL 2026</p><h3>KAALCHAKRA <em>1.0</em></h3><p>Explore the first edition of KAALCHAKRA CTF, its participants, and results.</p><div class="archive-stats"><div><strong>186</strong><span>Qualifier teams</span></div><div><strong>600+</strong><span>Participants</span></div><div><strong>₹2L</strong><span>Cash prize pool</span></div></div><div class="archive-actions"><a class="button button-gold" href="1.0/index.html">View KAALCHAKRA 1.0</a></div></div></div></div></section>
+<section class="legacy section" id="legacy"><div class="container"><div class="section-heading reveal"><p class="eyebrow">FROM THE ARCHIVES</p><h2>Explore the <em>first edition.</em></h2></div><div class="archive-layout reveal"><div class="archive-crest"><img src="images/CTF_Logo.webp" alt="KAALCHAKRA first edition emblem" loading="lazy"><span>THE FIRST CHAPTER</span></div><div class="archive-copy"><p class="archive-date">28 MARCH – 11 APRIL 2026</p><h3>KAALCHAKRA <em>1.0</em></h3><p>Explore the first edition of KAALCHAKRA CTF, its participants, and results.</p><div class="archive-stats"><div><strong>186</strong><span>Qualifier teams</span></div><div><strong>600+</strong><span>Participants</span></div><div><strong>₹2L</strong><span>Cash prize pool</span></div></div><div class="archive-actions"><a class="button button-gold" href="1.0/">View KAALCHAKRA 1.0</a></div></div></div></div></section>
 <!-- Partnerships section temporarily hidden.
 <section class="partners section"><div class="container partners-layout reveal"><img src="images/2.0/lantern_ok.png" alt="" width="95" height="160" loading="lazy"><div><p class="eyebrow">PARTNERSHIPS</p><h2>Support <em>KAALCHAKRA 2.0.</em></h2><p>Interested in supporting KAALCHAKRA 2.0?<br>Contact the organizers to discuss partnership opportunities.</p></div><a class="button button-outline" href="https://discord.gg/q4Pam5h3Bd" target="_blank" rel="noopener noreferrer">Contact the organizers</a></div></section>
 -->
-<section class="rules section" id="rules" aria-labelledby="rules-title"><div class="container"><div class="section-heading"><p class="eyebrow">FAIR PLAY</p><h2 id="rules-title">Competition <em>rules.</em></h2><p>These general rules apply to fair participation. The organizers will publish the final competition-specific rules before the event.</p></div><div class="rules-grid">
+<section class="rules section" id="rules" aria-labelledby="rules-title"><div class="container"><div class="section-heading"><p class="eyebrow">FAIR PLAY</p><h2 id="rules-title">Competition <em>rules.</em></h2><p>These general rules apply to fair participation. Terms and conditions apply. Participation is subject to the organizers’ eligibility requirements and decisions. Detailed rules will be published soon.</p></div><div class="rules-grid">
 <article><h3>01 · Play within scope</h3><p>Attack only the challenge systems and resources explicitly designated by the organizers. Do not target the competition platform, infrastructure, other teams, or third-party systems.</p></article>
 <article><h3>02 · Work with your team</h3><p>Collaborate only with your registered teammates. Do not share flags, solutions, accounts, or challenge access with other teams during the competition.</p></article>
 <article><h3>03 · Keep the event available</h3><p>Do not use denial-of-service attacks, disruptive scans, excessive automated requests, or actions that affect other participants or the availability of services.</p></article>
@@ -217,17 +218,20 @@
 <details><summary>How can I register?<span aria-hidden="true">+</span></summary><p>Registration is not open yet. Teams may have 1&ndash;3 members. The registration link, eligibility, and rules will be released once confirmed. Join the Discord community to follow announcements.</p></details>
 <details><summary>Do I need to be an experienced player?<span aria-hidden="true">+</span></summary><p>Curiosity is a good place to start. Practice web security, cryptography, forensics, and reverse engineering to prepare. Official eligibility and difficulty details will accompany the 2.0 rules.</p></details>
 <details><summary>What prizes are available?<span aria-hidden="true">+</span></summary><p>KAALCHAKRA 2.0 has a total cash prize pool of ₹3,50,000. The prize breakdown will be announced soon.</p></details>
-<details><summary>Where is the first edition?<span aria-hidden="true">+</span></summary><p>Explore the <a href="1.0/index.html">KAALCHAKRA 1.0 page</a> for event highlights, winners, and sponsors. You can also find it under Editions in the navigation.</p></details>
+<details><summary>Where is the first edition?<span aria-hidden="true">+</span></summary><p>Explore the <a href="1.0/">KAALCHAKRA 1.0 page</a> for event highlights, winners, and sponsors. You can also find it under Editions in the navigation.</p></details>
 </div></div></section>
-<section class="crew-section" id="crew"><div class="crew-mist" aria-hidden="true"></div><div class="container reveal"><img class="crew-logo" src="images/2.0/logo.webp" alt="" width="100" height="100" loading="lazy"><p class="eyebrow">STAY CONNECTED</p><h2>Join the CTF<br><em>community.</em></h2><p>Connect with participants and follow official<br>competition announcements.</p><a class="button button-gold" href="https://discord.gg/q4Pam5h3Bd" target="_blank" rel="noopener noreferrer">Join Discord</a><p class="crew-page-link"><a class="text-link" href="crew.html">Meet the organizing team &amp; volunteers</a></p><div class="socials"><a href="https://instagram.com/kaalchakra_ctf" target="_blank" rel="noopener noreferrer">Instagram</a><span>✦</span><a href="https://linkedin.com/in/kaalchakra-ctf" target="_blank" rel="noopener noreferrer">LinkedIn</a><span>✦</span><a href="https://twitter.com/KaalChakra_CTF" target="_blank" rel="noopener noreferrer">X / Twitter</a></div></div><img class="crew-barrel" src="images/2.0/barrel.png" alt="" loading="lazy" aria-hidden="true"><img class="crew-parrot" src="images/2.0/parrot.png" alt="" loading="lazy" aria-hidden="true"></section>
+<section class="contact-section section" id="crew" aria-labelledby="contact-title"><div class="container"><div class="section-heading"><p class="eyebrow">GET IN TOUCH</p><h2 id="contact-title">Contact <em>the organizers.</em></h2><p>KAALCHAKRA CTF Organizing Committee<br>National Forensic Sciences University, Goa Campus, Curti, Ponda, Goa 403401</p></div>
+<div class="contact-grid"><article class="contact-card"><h3>Sponsorship &amp; event enquiries</h3><div class="contact-people"><div><strong>Dr. Panem Charanarur</strong><a href="tel:+918999377519">+918999377519</a><a href="mailto:support@kaalchakractf.com">support@kaalchakractf.com</a></div><div><strong>Mr. Harsh Panchal</strong><a href="tel:+919727279184">+919727279184</a><a href="mailto:support@kaalchakractf.com">support@kaalchakractf.com</a></div></div></article><article class="contact-card"><h3>Event coordinators</h3><div class="contact-people"><div><strong>Ravindra Parihar</strong><a href="tel:+917737278979">+917737278979</a></div><div><strong>Haardik Bhagtani</strong><a href="tel:+917347738957">+917347738957</a></div></div></article><article class="contact-card contact-support"><h3>General support</h3><a href="mailto:support@kaalchakractf.com">support@kaalchakractf.com</a><a class="button button-gold" href="https://discord.gg/q4Pam5h3Bd" target="_blank" rel="noopener noreferrer">Join Discord</a></article></div>
+<div class="contact-links"><a href="crew/">Meet the organizing team</a><a href="https://instagram.com/kaalchakra_ctf" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://linkedin.com/in/kaalchakra-ctf" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://twitter.com/KaalChakra_CTF" target="_blank" rel="noopener noreferrer">X / Twitter</a></div></div></section>
 </main>
-<footer><div class="container footer-main"><a class="brand" href="#home"><span>KAALCHAKRA<small>COMPETITION INFORMATION · 2.0</small></span></a><p>NFSU GOA <span>×</span> TH3_RANG3RS</p><a href="1.0/index.html">KAALCHAKRA 1.0 (Mar – 2026)</a></div><div class="container footer-bottom"><span>© 2026 KAALCHAKRA CTF. All rights reserved.</span><button id="motion-toggle" aria-pressed="false">Pause motion</button><span>Built for the cybersecurity community.</span></div></footer>
+<footer><div class="container footer-main"><a class="brand" href="#home"><span>KAALCHAKRA<small>COMPETITION INFORMATION · 2.0</small></span></a><p class="footer-organizers">NATIONAL FORENSIC SCIENCES UNIVERSITY, GOA<br>×<br>TH3_RANG3RS</p><a href="mailto:support@kaalchakractf.com">support@kaalchakractf.com</a></div><div class="container footer-bottom"><span>© 2026 KAALCHAKRA CTF. All rights reserved.</span><button id="motion-toggle" aria-pressed="false">Pause motion</button><span>Built for the cybersecurity community.</span></div></footer>
 <div class="sound-dock" role="group" aria-label="Immersive sound controls">
  <button id="sound-toggle" type="button" aria-pressed="false" aria-label="Enable immersive sound"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4Z"/><path class="sound-waves" d="M16 8c2 2 2 6 0 8m3-11c4 4 4 10 0 14"/><path class="sound-muted" d="m17 10 4 4m0-4-4 4"/></svg><span class="sound-label">Sound off</span></button>
  <button id="sound-settings-toggle" type="button" aria-label="Sound settings" aria-expanded="false" aria-controls="sound-settings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4v16M12 4v16M18 4v16M3 9h6m0 7h6m0-9h6"/></svg></button>
  <div id="sound-settings" hidden role="group" aria-labelledby="sound-settings-title"><p id="sound-settings-title">THE SOUND OF THE SEA</p><p class="sound-description">Ocean ambience and spatial effects.<br>Best with headphones.</p><label class="sound-volume-label" for="sound-volume">Volume <output id="sound-volume-value" for="sound-volume">35%</output></label><input id="sound-volume" type="range" min="0" max="100" value="35" step="1"><label class="sound-option"><input id="sound-ambience" type="checkbox" checked>Ocean ambience</label><label class="sound-option"><input id="sound-effects" type="checkbox" checked>Interaction sounds</label></div>
 </div>
 <div class="reading-progress" aria-hidden="true"><span></span></div>
+<dialog id="registration-dialog" aria-labelledby="registration-title"><div class="registration-dialog-inner"><form method="dialog"><button class="registration-close" aria-label="Close registration options">×</button></form><p class="eyebrow">KAALCHAKRA CTF 2.0</p><h2 id="registration-title">Choose your <em>track.</em></h2><p>Registration links will be announced soon.</p><div class="registration-options"><button type="button" disabled>Register as a student <small>Coming soon</small></button><button type="button" disabled>Register as a professional <small>Coming soon</small></button><button type="button" disabled>Register as law enforcement <small>By nomination · Coming soon</small></button></div><a href="#crew" class="registration-contact">Questions? Contact the organizers</a></div></dialog>
 <dialog id="logo-reveal" aria-labelledby="reveal-title"><div class="dialog-header"><h2 id="reveal-title">KAALCHAKRA 2.0 · Official reveal</h2><form method="dialog"><button aria-label="Close reveal">×</button></form></div><video controls playsinline preload="none" src="videos/popup_video.mp4" poster="images/2.0/logo.webp">Your browser does not support this video. <a href="videos/popup_video.mp4">Download the reveal</a>.</video><p>The next chapter is coming soon.</p></dialog>
 </body>
 </html>

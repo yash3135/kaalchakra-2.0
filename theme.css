@@ -29,3 +29,43 @@ html[data-theme="light"] .sponsorship-slot:hover, html[data-theme="light"] .spon
 .footer-bottom span { color: #e5dfca; }
 @media (max-width: 900px) { .sponsorship-slots { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (max-width: 600px) { .sponsorship-heading { margin-bottom: 36px; } .sponsorship-slots { grid-template-columns: repeat(2, minmax(0, 1fr)); } .sponsorship-slot { min-height: 95px; padding: 12px; font-size: 13px; } .footer-bottom, .footer-bottom button { font-size: 13px; } }
+
+/* Registration and contact */
+#registration-dialog { width:min(620px,calc(100% - 32px)); max-height:calc(100dvh - 32px); overflow:auto; padding:0; border:1px solid #ceaa67; color:#eee5cf; background:linear-gradient(145deg,#14241f,#08120f); box-shadow:0 25px 80px #000a; }
+#registration-dialog::backdrop { background:#020807c9; }
+.registration-dialog-inner { position:relative; padding:clamp(26px,5vw,48px); animation:registration-enter .35s ease both; }
+.registration-dialog-inner h2 { margin-bottom:12px; }
+.registration-close { position:absolute; top:12px; right:16px; border:0; background:none; color:inherit; font-size:32px; cursor:pointer; }
+.registration-options { display:grid; gap:10px; margin:24px 0; }
+.registration-options button { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:16px; border:1px solid #b68f4e77; background:#102019; color:#eee5cf; text-align:left; font:600 14px/1.5 'Manrope',sans-serif; }
+.registration-options small { color:#d4bc87; font-size:11px; }
+.registration-contact { color:#f0d59c; font:14px 'Manrope',sans-serif; text-decoration:underline; }
+@keyframes registration-enter { from { opacity:0; transform:translateY(14px) scale(.98); } }
+.contact-section { background:linear-gradient(#06100ee8,#06100edb),url('images/2.0/cinematic/pirate-harbor.webp') center/cover; }
+.contact-grid { display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:16px; }
+.contact-card { padding:26px; border:1px solid #b68f4e66; background:#07130fe8; }
+.contact-card h3 { font-size:20px; margin-bottom:20px; color:#f0d59c; }
+.contact-people { display:grid; gap:18px; }
+.contact-people div { display:grid; gap:5px; }
+.contact-card strong,.contact-card a { overflow-wrap:anywhere; font:14px/1.6 'Manrope',sans-serif; }
+.contact-card a { color:#d8c18a; }
+.contact-support { display:flex; flex-direction:column; align-items:flex-start; gap:16px; }
+.contact-support h3 { margin:0; }
+.contact-links { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-top:30px; font:14px/1.5 'Manrope',sans-serif; color:#e0c993; }
+.footer-main .footer-organizers { display:block; text-align:center; line-height:1.7; }
+.sponsor-form-button { margin-top:22px; }
+.sponsor-form-button:disabled { cursor:not-allowed; opacity:.75; }
+html[data-theme="light"] .contact-section { background:linear-gradient(#f4ead5e8,#f4ead5e8),url('images/2.0/cinematic/parchment-voyage.webp') center/cover; }
+html[data-theme="light"] .contact-card { background:#fff8e7ed; border-color:#87592e77; }
+html[data-theme="light"] .contact-card h3,html[data-theme="light"] .contact-card strong,html[data-theme="light"] .contact-links { color:#0f354b; }
+html[data-theme="light"] .contact-card a { color:#6e2c1b; }
+html[data-theme="light"] #registration-dialog { background:linear-gradient(145deg,#fff8e7,#eadbc0); color:#36271c; }
+html[data-theme="light"] .registration-options button { background:#fff8e7; color:#36271c; border-color:#87592e77; }
+html[data-theme="light"] .registration-options small,html[data-theme="light"] .registration-contact { color:#6e2c1b; }
+@media(max-width:900px) { .contact-grid { grid-template-columns:1fr 1fr; } .contact-support { grid-column:1/-1; } }
+@media(max-width:600px) { .contact-grid { grid-template-columns:1fr; } .contact-support { grid-column:auto; } .registration-options button { flex-direction:column; align-items:flex-start; } .footer-main .footer-organizers { font-size:11px; } }
+@media(prefers-reduced-motion:reduce) { .registration-dialog-inner { animation:none; } }
+
+/* Keep the Editions chevron next to and vertically centered with its label. */
+.site-header .edition-menu summary { align-items: center; justify-content: flex-start; gap: 7px; }
+.site-header .edition-menu summary > span { display: inline-block; flex: 0 0 auto; width: 7px; height: 7px; margin: -3px 0 0; border-right: 1px solid currentColor; border-bottom: 1px solid currentColor; transform: rotate(45deg); font-size: 0; line-height: 0; }
