@@ -3,3 +3,6 @@
 #theme-toggle:focus-visible { outline: 2px solid #ceaa67; outline-offset: 3px; }
 html[data-theme="light"] #theme-toggle { background: #fff8e7; color: #36271c; border-color: #8c5e2a; box-shadow: 0 4px 15px #54392733; }
 @media (max-width: 700px) { #theme-toggle { left: 12px; bottom: 12px; font-size: 11px; padding: 8px 12px; } }
+
+html[data-theme="dark"] img.stellar-logo { filter: brightness(0) invert(1); }
+html[data-theme="dark"] a:is(:hover, :focus-visible) img.stellar-logo { filter: none; }
