@@ -1,0 +1,5 @@
+#theme-toggle { position: fixed; left: 18px; bottom: 18px; z-index: 90; min-height: 44px; padding: 9px 15px; border: 1px solid #ceaa67; background: #0b1713; color: #f0d59c; font: 600 12px/1.4 'Manrope', Arial, sans-serif; letter-spacing: .04em; cursor: pointer; box-shadow: 0 4px 15px #0006; }
+#theme-toggle:hover { filter: brightness(1.2); }
+#theme-toggle:focus-visible { outline: 2px solid #ceaa67; outline-offset: 3px; }
+html[data-theme="light"] #theme-toggle { background: #fff8e7; color: #36271c; border-color: #8c5e2a; box-shadow: 0 4px 15px #54392733; }
+@media (max-width: 700px) { #theme-toggle { left: 12px; bottom: 12px; font-size: 11px; padding: 8px 12px; } }
