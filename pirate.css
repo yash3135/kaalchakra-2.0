@@ -5120,7 +5120,7 @@ html {
   width: min(360px, 100%);
   min-height: 32px;
   padding: 8px 20px;
-  background: url("images/2.0/Elements_KC_2.0.png") center/100% auto no-repeat;
+  background: url("images/2.0/Elements_KC_2.0.webp") center/100% auto no-repeat;
 }
 
 /* Sound starts off and is enabled only by an explicit click. */

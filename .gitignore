@@ -1,0 +1,10 @@
+# Stale local duplicates / backups
+kaalchakra-2.0 light/
+1.0 old/
+
+# Archives — don't ship zips with the site
+*.zip
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db

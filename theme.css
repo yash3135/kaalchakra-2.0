@@ -6,3 +6,26 @@ html[data-theme="light"] #theme-toggle { background: #fff8e7; color: #36271c; bo
 
 html[data-theme="dark"] img.stellar-logo { filter: brightness(0) invert(1); }
 html[data-theme="dark"] a:is(:hover, :focus-visible) img.stellar-logo { filter: none; }
+
+/* Shared sponsor tiers and footer readability in both themes. */
+.sponsorship-heading { max-width: 720px; margin-bottom: 52px; }
+.sponsorship-heading h2 { margin-bottom: 18px; }
+.sponsorship-heading > p:last-child { font-size: 21px; }
+.sponsorship-tiers { display: grid; gap: 34px; }
+.sponsorship-tier-heading { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 20px; margin-bottom: 14px; }
+.sponsorship-tier-heading h3 { color: #f0d59c; font: 600 14px/1.5 'Manrope', sans-serif; text-transform: uppercase; letter-spacing: .15em; }
+.sponsorship-tier-heading p { color: #c7c2ac; font: 14px/1.5 'Manrope', sans-serif; }
+.sponsorship-slots { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
+.sponsorship-slot { min-width: 0; min-height: 112px; padding: 18px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 8px; text-align: center; color: #e9d2a0; border: 1px dashed #b68f4e99; background: #101d18aa; font: 500 14px/1.5 'Manrope', sans-serif; transition: background .2s, border-color .2s; }
+.sponsorship-slot:hover, .sponsorship-slot:focus-visible { border-color: #f0d59c; background: #c9a15920; }
+.sponsorship-slot small { color: #b5b8a6; font-size: 12px; }
+.sponsorship-contact, .sponsorship-archive { margin-top: 28px; font: 14px/1.6 'Manrope', sans-serif; }
+.sponsorship-contact a, .sponsorship-archive a { color: #f0d59c; text-decoration: underline; text-underline-offset: 4px; }
+html[data-theme="light"] .sponsorship-tier-heading h3, html[data-theme="light"] .sponsorship-contact a, html[data-theme="light"] .sponsorship-archive a { color: #0f354b; }
+html[data-theme="light"] .sponsorship-tier-heading p, html[data-theme="light"] .sponsorship-slot small { color: #5e4a36; }
+html[data-theme="light"] .sponsorship-slot { color: #36271c; border-color: #87592e99; background: #fff8e7cc; }
+html[data-theme="light"] .sponsorship-slot:hover, html[data-theme="light"] .sponsorship-slot:focus-visible { background: #eadbc0; border-color: #6e2c1b; }
+.footer-bottom, .footer-bottom button { font-size: 14px; line-height: 1.6; }
+.footer-bottom span { color: #e5dfca; }
+@media (max-width: 900px) { .sponsorship-slots { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .sponsorship-heading { margin-bottom: 36px; } .sponsorship-slots { grid-template-columns: repeat(2, minmax(0, 1fr)); } .sponsorship-slot { min-height: 95px; padding: 12px; font-size: 13px; } .footer-bottom, .footer-bottom button { font-size: 13px; } }

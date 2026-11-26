@@ -338,7 +338,7 @@ figcaption { color: var(--fog); font-size: .85rem; }
   --mono: "Manrope", sans-serif;
   --radius: 0px;
 }
-body { background: linear-gradient(#07110fee, #081310f5), url('../../images/2.0/cinematic/pirate-harbor.webp') center / cover fixed; }
+body { background: linear-gradient(180deg, #0a1614c7, #081310e4 55%, #060f0dee), url('../../images/2.0/cinematic/pirate-harbor.webp') center / cover fixed; }
 .nav { min-height: 76px; padding-inline: clamp(1rem, 4vw, 3rem); background: #07110ff2; border-bottom: 1px solid #c9a15966; }
 .brand .hi { color: #ead29e; font-family: Georgia, serif; }
 .brand b, .eyebrow, .caps { color: #d0ac67; }
